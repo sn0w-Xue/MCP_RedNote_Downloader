@@ -10,7 +10,7 @@
       "args": [
         "run",
         "--project",
-        "项目路径",
+        "项目路径/tool",
         "项目路径/MCP_server.py"
       ]
     }
