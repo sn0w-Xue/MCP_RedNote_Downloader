@@ -11,7 +11,7 @@
         "run",
         "--project",
         "项目路径/tool",
-        "项目路径/MCP_server.py"
+        "项目路径/main.py"
       ]
     }
   }
