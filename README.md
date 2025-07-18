@@ -1,5 +1,7 @@
 <h1>🧩 MCP 服务器</h1>
-<p><b>本地运行的</b> MCP 服务器, 配置如下</p>
+<p><b>本地运行的</b> MCP 服务器, 提供 Agent 通过 URL 下载小红书图片、视频和 LivePhoto 和获取作品信息的能力，感谢 <a href="https://github.com/JoeanAmier">JoeanAmier</a> 开源维护的 <a href="https://github.com/JoeanAmier/XHS-Downloader">XHS-Downloader</a> 项目.
+</p>
+<p>请使用<code>git clone --recurse-submodules --depth=1 git@github.com:sn0w-Xue/MCP_RedNote_Downloader.git</code>克隆本项目代码到本地，再配置 MCP 服务器：</p>
 <pre>
 {
   "mcpServers": {

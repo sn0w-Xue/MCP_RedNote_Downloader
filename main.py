@@ -18,7 +18,8 @@ mcp = FastMCP(
         A URL containing any of the following strings is a RedNote work URL:
             1. www.xiaohongshu.com
             2. xhslink.com
-        Call the download_work_from_rednote() function to download the work via its URL.
+        Call the download_rednote_work() function to download the work via its URL.
+        Call the get_rednote_work_info() function to get the work info via its URL.
     """,
 )
 
