@@ -3,8 +3,9 @@
 <h2>安装教程</h2>
 </p>
 <p>1. &nbsp 克隆本项目代码到本地：<code>git clone --recurse-submodules --depth=1 git@github.com:sn0w-Xue/MCP_RedNote_Downloader.git</code></p>
-<p>2. &nbsp 在项目文件夹路径下执行：<code>uv add --project ./tool fastmcp</code></p>
+<p>2. &nbsp 同步项目环境依赖：<code>cd tool && uv sync && uv add fastmcp</code></p>
 <p>3. &nbsp 配置 MCP 服务器：</p>
+<p>MacOS / Linux</p>
 <pre>
 {
   "mcpServers": {
@@ -13,6 +14,27 @@
       "type": "stdio",
       "command": "uv",
       "args": [
+        "run",
+        "--project",
+        "项目路径/tool",
+        "项目路径/main.py"
+      ]
+    }
+  }
+}
+</pre>
+<p>Windows</p>
+<pre>
+{
+  "mcpServers": {
+    "RedNote downloader": {
+      "disabled": false,
+      "timeout": 600,
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "uv",
         "run",
         "--project",
         "项目路径/tool",
