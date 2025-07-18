@@ -1,14 +1,14 @@
 from pathlib import Path
 import sys
-from pprint import pprint
 sys.path.insert(0, str(Path(__file__).parent / "tool"))
+
 from fastmcp import FastMCP
 from typing import Annotated
 from pydantic import Field
 import json
-from tool.source.module import Settings
-from tool.source.application import XHS
-from tool.source.translation import _, switch_language
+from source.module import Settings
+from source.application import XHS
+from source.translation import _, switch_language
 
 
 mcp = FastMCP(
@@ -101,12 +101,4 @@ async def get_rednote_work_info(
 
 
 if __name__ == '__main__':
-    # 将子文件夹添加到系统路径（假设子文件夹名为"subfolder"）
-     # 插入到路径开头，优先搜索
-    print("Python搜索路径(sys.path):")
-    pprint(sys.path)
-
-    # 打印已加载的模块
-    print("\n已加载的模块(sys.modules):")
-    pprint(list(sys.modules.keys()))
     mcp.run()
